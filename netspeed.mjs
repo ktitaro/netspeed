@@ -12,7 +12,7 @@ const template = `
 `
 
 await $`
-  curl \
+  curl -L \
     --silent \
     --show-error \
     --output /dev/null \
