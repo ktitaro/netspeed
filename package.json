@@ -1,0 +1,10 @@
+{
+  "name": "@perfrush/netspeed",
+  "description": "cURL network metrics",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
+}
