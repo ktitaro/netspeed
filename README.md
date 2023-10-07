@@ -5,12 +5,21 @@ While its not recommended to rely on this tool for getting insights about your f
 
 ## How to run it
 
+Using node.js:
 ```sh
 $ yarn install
 $ yarn start -u https://example.com -n 5
 ```
 
+Using docker:
+```sh
+$ docker build -t netspeed .
+$ docker container run -it netspeed -- -u https://example.com -n 5
+```
+
 ## Network metrics
+
+All metrics are measured in milliseconds (ms)
 
 ```json
 {
