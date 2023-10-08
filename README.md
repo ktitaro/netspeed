@@ -1,7 +1,6 @@
 # NetSpeed
 
-Utility that helps to measure network performance metrics using cURL ✨ 
-While its not recommended to rely on this tool for getting insights about your frontends ([read more](https://blog.cloudflare.com/ttfb-is-not-what-it-used-to-be/)), its very handy to measure your backends or microservices network stats.
+Utility that helps to measure network performance metrics using cURL. While its not recommended to rely on this tool for getting insights about your frontends ([read more](https://blog.cloudflare.com/ttfb-is-not-what-it-used-to-be/)), its very handy to measure your backends or microservices network stats.
 
 ## How to run it
 
