@@ -1,4 +1,5 @@
 import 'zx/globals'
+import fs from 'fs/promises'
 
 const template = `{
   "time_total": %{time_total},
@@ -10,7 +11,7 @@ const template = `{
   "time_starttransfer": %{time_starttransfer}
 }`
 
-async function main() {
+async function analyze() {
   if (!argv.u) {
     let output = 'Target url is required! '
     output += 'Please, provide the target '
@@ -22,7 +23,7 @@ async function main() {
   const url = argv.u
   const num = (argv.n ?? 3)
   console.log(`
-    \rPreparing to analyze...
+    \rAnalyzing network performance...
     \rTarget URL: "${url}"
     \rIterations: "${num}"
   `)
@@ -56,8 +57,9 @@ async function main() {
     }
   })
 
-  console.log(JSON.stringify(
-    result, null, 2))
+  const data = JSON.stringify(result, null, 2)
+  if (!argv.o) return console.log(data)
+  await fs.writeFile(argv.o, data)
 }
 
-main()
+analyze()

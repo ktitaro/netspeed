@@ -8,13 +8,14 @@ While its not recommended to rely on this tool for getting insights about your f
 Using node.js:
 ```sh
 $ yarn install
-$ yarn start -u https://example.com -n 5
+$ yarn start -u https://example.com -o ./example.json -n 5
 ```
 
 Using docker:
 ```sh
 $ docker build -t netspeed .
-$ docker container run -it netspeed -- -u https://example.com -n 5
+$ docker container run -it netspeed -- \
+  -u https://example.com -o ./example.json -n 5
 ```
 
 ## Network metrics
