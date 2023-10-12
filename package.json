@@ -1,12 +1,8 @@
 {
-  "type": "module",
   "name": "netspeed",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "start": "zx ./netspeed.mjs"
-  },
   "dependencies": {
-    "zx": "^7.2.3"
+    "commander": "^11.0.0"
   }
 }

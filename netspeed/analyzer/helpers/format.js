@@ -1,0 +1,1 @@
+exports.convertToMs = (v) => Number(v.toFixed(3))*1000

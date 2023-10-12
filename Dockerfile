@@ -1,6 +1,5 @@
 FROM node:20.8.0
 WORKDIR /app
-COPY ./package.json ./package.json
-COPY ./netspeed.mjs ./netspeed.mjs
+COPY . .
 RUN npm install
-ENTRYPOINT ["npm", "run", "start"]
+ENTRYPOINT ["node", "./netspeed"]
