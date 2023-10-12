@@ -1,12 +1,22 @@
 import 'zx/globals'
 import fs from 'fs/promises'
 
+// const template = `{
+//   "time_total": %{time_total},
+//   "time_connect": %{time_connect},
+//   "time_redirect": %{time_redirect},
+//   "time_appconnect": %{time_appconnect},
+//   "time_namelookup": %{time_namelookup},
+//   "time_pretransfer": %{time_pretransfer},
+//   "time_starttransfer": %{time_starttransfer}
+// }`
+
 const template = `{
-  "time_total": %{time_total},
-  "time_connect": %{time_connect},
+  "dns_lookup": %{time_namelookup},
+  "tcp_handshake": %{time_connect},
   "time_redirect": %{time_redirect},
+  "time_total": %{time_total},
   "time_appconnect": %{time_appconnect},
-  "time_namelookup": %{time_namelookup},
   "time_pretransfer": %{time_pretransfer},
   "time_starttransfer": %{time_starttransfer}
 }`
