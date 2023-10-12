@@ -14,13 +14,7 @@ async function main() {
   out = String(out ?? './net.json')
   num = Number(num ?? '3')
 
-  console.log(`
-    \rRunning netspeed...
-    \rTarget URL: "${url}"
-    \rIterations: "${num}"
-  `)
-
-  const run = require('./worker')
+  const run = require('./analyzer')
   await run(url, num)
 }
 
