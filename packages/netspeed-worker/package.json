@@ -1,0 +1,7 @@
+{
+  "name": "@netspeed/worker",
+  "author": "Anatoly Ktitarov <hello@ktitarov.com>",
+  "description": "cURL metrics collector for the netspeed",
+  "version": "0.0.0",
+  "private": true
+}

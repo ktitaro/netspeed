@@ -1,8 +1,12 @@
 {
   "name": "netspeed",
-  "version": "1.0.0",
+  "author": "Anatoly Ktitarov <hello@ktitarov.com>",
+  "description": "Utility to measure network performance using cURL",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "commander": "^11.0.0"
-  }
+  "workspaces": [
+    "packages/netspeed-cli",
+    "packages/netspeed-report",
+    "packages/netspeed-worker"
+  ]
 }

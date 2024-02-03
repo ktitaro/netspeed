@@ -1,0 +1,23 @@
+{
+    "name": "@netspeed/cli",
+    "author": "Anatoly Ktitarov <hello@ktitarov.com>",
+    "description": "Netspeed CLI to measure performance",
+    "version": "0.0.0",
+    "private": true,
+    "bin": "dist/index.js",
+    "main": "dist/index.js",
+    "scripts": {
+        "start": "node ./dist",
+        "clean": "rimraf ./dist",
+        "build": "node ./esbuild",
+        "prebuild": "npm run clean"
+    },
+    "dependencies": {
+        "commander": "^11.1.0"
+    },
+    "devDependencies": {
+        "esbuild": "^0.20.0",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.3.3"
+    }
+}

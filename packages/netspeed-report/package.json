@@ -1,0 +1,7 @@
+{
+  "name": "@netspeed/report",
+  "author": "Anatoly Ktitarov <hello@ktitarov.com>",
+  "description": "HTML-report generator for the netspeed",
+  "version": "0.0.0",
+  "private": true
+}
