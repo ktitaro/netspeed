@@ -1,8 +1,0 @@
-{
-  "name": "netspeed",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "commander": "^11.0.0"
-  }
-}
